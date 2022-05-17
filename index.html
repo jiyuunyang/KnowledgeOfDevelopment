@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>event bubbling & event capturing</h1>
+    <div>
+      <ul>
+        <li>example</li>
+      </ul>
+    </div>
+    <h1>event delegation</h1>
+    <ul onclick="alert(event.type + '!')">
+      <li>첫번째</li>
+      <li>두번째</li>
+      <li>세번째</li>
+    </ul>
+    <script type="text/javascript" src="eventBubbling.js"></script>
+  </body>
+</html>
