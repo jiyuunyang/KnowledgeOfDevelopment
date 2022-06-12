@@ -14,11 +14,11 @@ function FormikTest() {
           }
           return errors;
         }}
+        // 폼이 submit 됐을때 실행할 함수 설정
         onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            setSubmitting(false);
-          }, 400);
+          console.log(values);
+          // 버튼 다시 활성화 하기 ( 버튼 비활성화 기능 사용시 )
+          setSubmitting(false);
         }}
       >
         {({
